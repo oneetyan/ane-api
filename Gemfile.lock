@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     backports (3.6.4)
+    dalli (2.7.2)
     dotenv (1.0.2)
     foreman (0.76.0)
       dotenv (~> 1.0.2)
@@ -32,6 +33,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  dalli
   foreman
   puma
   sinatra
