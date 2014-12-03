@@ -5,7 +5,7 @@ module Ane
   class Web < Sinatra::Base
     helpers do
       def json(obj)
-        content_type :json
+        content_type 'application/json; charset=utf-8' # XXX
         JSON.dump(obj)
       end
     end
