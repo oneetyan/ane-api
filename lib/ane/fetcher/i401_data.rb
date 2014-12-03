@@ -10,7 +10,7 @@ module Ane
 
       def self.fetch_all(cache_strategy: :null)
         strategy = Ane::Cache.find_strategy(cache_strategy)
-        data = strategy.call do
+        data = strategy.call(key: 'ane_list') do
           self.data_uri.read
         end
         lines = data.split(/\r?\n/)
