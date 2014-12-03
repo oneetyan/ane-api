@@ -8,6 +8,12 @@ module Ane
         candidates = Ane::Fetcher::I401Data.fetch_all
         json ok: true, ane: candidates
       end
+
+      get '/v0/ane/sample' do
+        candidates = Ane::Fetcher::I401Data.fetch_all
+        sampled = candidates.sample
+        json ok: true, ane: sampled
+      end
     end
   end
 end
