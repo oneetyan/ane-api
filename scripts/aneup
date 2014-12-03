@@ -1,0 +1,3 @@
+#!/bin/bash
+
+bundle exec foreman start --procfile development.Procfile
