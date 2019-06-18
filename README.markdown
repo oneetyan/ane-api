@@ -4,7 +4,7 @@
 
 # Requirements
 
-* Ruby 2.1.4
+* Ruby 2.6
 * Bundler
 * (memcached)
 
